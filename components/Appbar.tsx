@@ -31,8 +31,8 @@ export default function Appbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black opacity-75 z-50 flex justify-center items-center">
-          <div className="bg-white rounded-lg px-10 py-6 text-center">
+        <div className="fixed top-0 left-0 w-full h-full bg-black z-50 flex justify-center items-center">
+          <div className="bg-white rounded-lg px-10 py-6 text-center ">
             <div className="text-[#002e87] text-lg cursor-pointer mb-4">
               Personel
             </div>
