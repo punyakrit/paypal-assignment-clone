@@ -1,20 +1,16 @@
-"use client";
-import React, { useState } from "react";
-import logo from "@/public/logo.svg";
-import Image from "next/image";
+import { useState } from "react";
+import logo from '../assets/logo.svg'
+function Appbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default function Appbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
   return (
     <div className="border-b border-black/20 h-20 flex justify-between px-8 items-center">
       <div className="flex items-center">
         <div>
-          <Image src={logo} alt="logo image" className="w-8" />
+          <img src={logo} alt="logo image" className="w-8" />
         </div>
         <div className="hidden lg:flex text-[#002e87] space-x-16 ml-16 items-center">
           <div className="cursor-pointer">Personel</div>
@@ -72,5 +68,7 @@ export default function Appbar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+export default Appbar

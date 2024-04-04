@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function MainComponent() {
+function MainComponent() {
   return (
     <div className="flex justify-center xl:mt-32 lg:mt-28 md:mt-24 sm:mt-16 mt-14 2xl:mx-96 xl:mx-80 lg:mx-52 md:mx-28 sm:mx-24 mx-12 flex-col">
       <div className="2xl:text-9xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-center ">
@@ -15,6 +14,10 @@ export default function MainComponent() {
           Connect with a Payments Expert
         </div>
       </div>
+
+      
     </div>
   )
 }
+
+export default MainComponent
