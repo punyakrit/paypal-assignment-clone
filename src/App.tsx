@@ -1,5 +1,6 @@
 
 import Appbar from './components/Appbar'
+import Detail from './components/Detail'
 import ImageView from './components/ImageView'
 import MainComponent from './components/MainComponent'
 
@@ -10,6 +11,7 @@ function App() {
       <Appbar/>
       <MainComponent/>
       <ImageView/>
+      <Detail/>
     </div>
   )
 }
