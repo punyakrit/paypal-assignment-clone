@@ -1,9 +1,11 @@
 import company from "../assets/company.png";
 import person from "../assets/person.jpg";
+import prod from "../assets/prod.png";
+import paying from "../assets/paying.jpg";
 
 function Detail() {
   return (
-    <div className="flex my-20 md:my-44 justify-center flex-col items-center ">
+    <div className="flex mt-20 md:mt-44 justify-center flex-col items-center ">
       <div className="md:flex md:mx-32 mx-12 ">
         <div className="md:w-1/2 md:border-r md:border-gray-700/40">
           <div className="text-[#002e87] lg:text-9xl md:text-7xl text-5xl font-bold pt-10">
@@ -104,7 +106,7 @@ function Detail() {
       </div>
 
       <div className="bg-[#f6f5ef] w-full h-full px-12 lg:px-32 py-20 md:flex justify-center space-y-10 md:space-y-0 ">
-        <div className="md:w-1/4">
+        <div className="md:w-1/4 md:px-10">
           <div className="font-bold">Keep data Fresh</div>
           <div className="mt-4">
             Use Account Updater to securely make batch and real-time updates for
@@ -112,7 +114,7 @@ function Detail() {
           </div>
         </div>
 
-        <div className="md:w-1/4">
+        <div className="md:w-1/4 md:px-10">
           <div className="font-bold">Adopt network tokenization</div>
           <div className="mt-4">
             Boost security and approvals with a partner who has already
@@ -120,7 +122,7 @@ function Detail() {
           </div>
         </div>
 
-        <div className="md:w-1/4">
+        <div className="md:w-1/4 md:px-10">
           <div className="font-bold">Retry failed transactions</div>
           <div className="mt-4">
             We strive to optimize approvals right from the start. But if they
@@ -129,7 +131,7 @@ function Detail() {
           </div>
         </div>
 
-        <div className="md:w-1/4">
+        <div className="md:w-1/4 md:px-10">
           <div className="font-bold">Optimize Routing</div>
           <div className="mt-4">
             Route transactions to global acquiring and networks that will yields
@@ -138,11 +140,113 @@ function Detail() {
         </div>
       </div>
 
+      <div className="lg:px-32 md:px-20 px-12 md:flex py-16 w-full">
+        <div className="md:w-1/2 flex flex-col justify-center md:pr-16">
+          <div className="text-4xl font-semibold">
+            Orchestration made simple
+          </div>
+          <div className="mt-6 ">
+            Move on from piecemeal management of disparate tools, reporting
+            systems, and processers.Use our flexible tools to anage the entire
+            payment process, help increase resiliency, and reduce operational
+            complexity.
+          </div>
+        </div>
+        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+          <img src={prod} className="rounded-3xl"></img>
+        </div>
+      </div>
 
-        <div>
-            
+      <div className=" w-full h-full px-12 lg:px-32 py-20 md:flex justify-center space-y-10 md:space-y-0 ">
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">
+            Orchestrate multiple payments partners
+          </div>
+          <div className="mt-4">
+            You always maintain full control of your data and configure partner
+            access.
+          </div>
         </div>
 
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">
+            Easily create secure data connections.
+          </div>
+          <div className="mt-4">
+            Just Use of a few snippets of code to securely share data with
+            partners you choose.
+          </div>
+        </div>
+
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Streamline reconciliation</div>
+          <div className="mt-4">
+            Enable separate ccounts to connect and share information.
+          </div>
+        </div>
+
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Unlock new sales channels</div>
+          <div className="mt-4">
+            Connect to commercial partners so you accept payments on their
+            website.
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f4f4f4] w-full h-full md:flex px-12 md:px-32 py-14 mt-20">
+        <div className="md:w-1/2 flex justify-center">
+          <img src={paying} className="rounded-2xl h-[500px] "></img>
+        </div>
+        <div className="md:w-1/2  flex flex-col mt-8 md:mt-0 md:pl-14 justify-center">
+          <div className="text-3xl">Manage risk and compliance</div>
+          <div className="mt-4">
+            We can help you identify and manage potential security, fraud, and
+            compliance risk-- so you can focus on what matters most growing your
+            business.
+          </div>
+          <div className="text-blue-500 font-semibold cursor-pointer mt-8">
+            Learn more about managing risk
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f6f5ef] w-full h-full px-12 lg:px-32 py-20 md:flex justify-center space-y-10 md:space-y-0 ">
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Right size your fraud solutions</div>
+          <div className="mt-4">
+            Choose the level of fraud protection you need - form our built-in
+            fraud checks to advanced tools.
+          </div>
+          <div className="text-blue-500 font-semibold mt-4">
+            About Fraud Protection
+          </div>
+        </div>
+
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Arm yourself against chargebacks</div>
+          <div className="mt-4">
+            We can handle frauds analysis, plus cover any eligible chargeback
+            losses and dispute fees.
+          </div>
+        </div>
+
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Keep up with compliance</div>
+          <div className="mt-4">
+            Work with one of the most conected fintech providers to help respond
+            to changing risk and compliance guidance.
+          </div>
+        </div>
+
+        <div className="md:w-1/4 md:px-10">
+          <div className="font-bold">Let us manage disputes</div>
+          <div className="mt-4">
+            Our dispute automation solution pulls data from your payment records
+            and submits responses to issuers in real time.
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
