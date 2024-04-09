@@ -2,6 +2,9 @@ import { FaArrowRight, FaQuoteLeft } from "react-icons/fa";
 import bg from "../assets/glow-bg.svg";
 import { TiTick } from "react-icons/ti";
 import person from "../assets/persson.png";
+import report from "../assets/report.png";
+import grp from "../assets/grp.png";
+import dev from "../assets/deve.png";
 
 const data = [
   "Accept payment in 200 markets and 130 currencies ",
@@ -100,8 +103,84 @@ function Modular() {
         </div>
       </div>
 
-      <div>
-        
+      <div className="mt-32 pb-16 xl:mx-32 lg:mx-20 mx-12 border-b border-gray-300 md:flex">
+        <div className="md:w-1/2 md:border-r border-gray-300 md:pr-14 pt-4">
+          <div className="text-2xl font-semibold">
+            Executive Guide: PayPal enterprise integration
+          </div>
+          <div className="py-6">
+            Whether you are making a switch or upgrading your tools, learn how
+            we make the integration process as flexible and seamless as
+            possible.
+          </div>
+          <div className="flex text-xl items-center text-blue-500 font-bold cursor-pointer">
+            Get the guide <FaArrowRight className="ml-4" />
+          </div>
+        </div>
+        <div className="md:w-1/2 md:pl-14 pt-4">
+          <div className="text-2xl font-semibold">
+            eBook: Signs you've outgrown your payment
+          </div>
+          <div className="py-6">
+            Payments processer stunting your growth? It might be time to look
+            for a new one.
+          </div>
+          <div className="flex text-xl items-center text-blue-500 font-bold cursor-pointer">
+            Read the eBook <FaArrowRight className="ml-4" />
+          </div>
+        </div>
+      </div>
+
+      <div className="my-20 pb-4 xl:px-32 lg:px-20 px-12 md:flex ">
+        <div className="md:w-2/5">
+          <img src={report}></img>
+        </div>
+        <div className="md:w-3/5 md:pl-12 pt-8 flex flex-col justify-center">
+          <div className="font-bold text-xl">
+            Report: Forrester economic impact analysis
+          </div>
+          <div className="py-4">
+            Forrester concluded that our enterprise solutions deliver credit
+            card and alternative payment processing services fast and at a
+            scale, while enabling high authentication rates.
+          </div>
+          <div className="flex items-center text-blue-500 font-bold">
+            Get the report <FaArrowRight />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#f5f5f5] py-14  xl:px-32 lg:px-20 px-12 md:flex">
+        <div className="md:w-1/2 bg-white p-12 md:mr-8 mt-4 flex flex-col items-center">
+          <div>
+            <img src={grp}></img>
+          </div>
+          <div className="text-3xl font-light py-6 mt-4">
+            Contact our sales Team
+          </div>
+          <div className="text-xl text-gray-500">
+            Learn how payments can be leveraged as a catalyst for growth
+          </div>
+          <button className="mt-32 font-semibold bg-sky-700 rounded-full text-white px-5 text-xl py-3">
+            Contact Sales
+          </button>
+        </div>
+
+        <div className="md:w-1/2 bg-white p-12 md:ml-8 mt-4 flex flex-col items-center">
+          <div>
+            <img src={dev}></img>
+          </div>
+          <div className="text-3xl font-light py-6 mt-4">
+            Explore Developer Documentation
+          </div>
+          <div className="text-xl text-gray-500">
+            See how our flexible and interoperable technology helps to simply
+            integration.
+          </div>
+          <button className="mt-32 font-semibold bg-sky-700 rounded-full text-white px-5 text-xl py-3">
+            Visit Developer Docs
+          </button>
+        </div>
       </div>
     </div>
   );
