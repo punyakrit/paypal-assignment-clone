@@ -2,6 +2,7 @@ import company from "../assets/company.png";
 import person from "../assets/person.jpg";
 import prod from "../assets/prod.png";
 import paying from "../assets/paying.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 function Detail() {
   return (
@@ -46,8 +47,8 @@ function Detail() {
             Accept credit and debit cards, digital wallets, PayPal, and 20+
             local payment methods. All in single integration
           </div>
-          <div className="mt-3 font-semibold text-blue-500 cursor-pointer">
-            More about payment methods
+          <div className="mt-3 font-semibold text-blue-500 cursor-pointer flex items-center">
+            More about payment methods <FaArrowRight className="ml-4"/>
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center">
@@ -205,8 +206,8 @@ function Detail() {
             compliance risk-- so you can focus on what matters most growing your
             business.
           </div>
-          <div className="text-blue-500 font-semibold cursor-pointer mt-8">
-            Learn more about managing risk
+          <div className="text-blue-500 font-semibold cursor-pointer mt-8 flex items-center">
+            Learn more about managing risk <FaArrowRight className="ml-4"/>
           </div>
         </div>
       </div>
@@ -218,8 +219,8 @@ function Detail() {
             Choose the level of fraud protection you need - form our built-in
             fraud checks to advanced tools.
           </div>
-          <div className="text-blue-500 font-semibold mt-4">
-            About Fraud Protection
+          <div className="text-blue-500 font-semibold mt-4 flex items-center">
+            About Fraud Protection <FaArrowRight className="ml-4"/>
           </div>
         </div>
 
